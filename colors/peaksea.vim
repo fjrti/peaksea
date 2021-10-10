@@ -396,6 +396,7 @@ elseif &background=='dark'
 
       hi MatchParen	ctermfg=NONE	ctermbg=DarkMagenta
     endif
+
     if &t_Co==8
       " 8 colour terminal support, this assumes 16 colour is available through
       " setting the 'bold' attribute, will get bright foreground colour.
@@ -594,6 +595,32 @@ hi link		MyTagListTagName	IncSearch
 hi link		MyTagListTagScope	Constant
 
 " COLOR LINKS DEFINE END
+
+" from extend.vim
+"
+
+highlight DiffAdd        cterm=none  ctermbg=237  ctermfg=9      guibg=#3a3a3a  guifg=#ff0000 gui=none
+highlight DiffDelete     cterm=none  ctermbg=none ctermfg=none   guibg=bg       guifg=fg      gui=none
+highlight DiffChange     cterm=none  ctermbg=237  ctermfg=none   guibg=#3a3a3a  guifg=#ffffff gui=none
+highlight DiffText       cterm=none  ctermbg=237  ctermfg=9      guibg=#3a3a3a  guifg=#ff0000 gui=none
+
+highlight clear SignColumn
+highlight clear ErrorMsg
+
+highlight VertSplit      cterm=none  ctermbg=bg   ctermfg=245    guibg=bg       guifg=#8a8a8a
+" highlight CursorLine     cterm=none  ctermbg=237   guibg=#3a3a3a  guifg=fg      gui=none
+" highlight CursorLine     cterm=underline ctermbg=none  ctermfg=none   guibg=#3a3a3a  guifg=fg      gui=none
+highlight NonText        cterm=none  ctermbg=bg   ctermfg=fg     guibg=bg       guifg=fg
+highlight PMenu          ctermfg=0   ctermbg=242  guifg=black    guibg=darkgrey
+highlight PMenuSel       ctermfg=242 ctermbg=6    guifg=darkgrey guibg=black
+highlight ALEErrorSign   ctermfg=9   ctermbg=bg   guifg=#C30500  guibg=bg
+highlight ALEWarningSign ctermfg=11  ctermbg=bg   guifg=#ED6237  guibg=bg
+highlight FoldColumn     cterm=none  ctermbg=bg   ctermfg=fg     guibg=bg       guifg=fg
+highlight Folded         cterm=none  ctermbg=bg   ctermfg=fg     guibg=bg       guifg=fg
+
+highlight GitAdd       cterm=none  ctermbg=none  ctermfg=2     guibg=bg  guifg=#008000 gui=none
+highlight GitChange    cterm=none  ctermbg=none  ctermfg=11    guibg=bg  guifg=#87af87 gui=none
+highlight GitDelete    cterm=none  ctermbg=none  ctermfg=9     guibg=bg  guifg=#87af87 gui=none
 
 " vim:et:nosta:sw=2:ts=8:
 " vim600:fdm=marker:fdl=1:
