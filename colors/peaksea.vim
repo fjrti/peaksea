@@ -599,12 +599,12 @@ hi link		MyTagListTagScope	Constant
 " from extend.vim
 "
 
-" if &background=='light' 
+if &background=='light' 
 highlight DiffAdd        cterm=none  ctermbg=225  ctermfg=9      guibg=#FFFAFA guifg=#ff0000 gui=none
 highlight DiffDelete     cterm=none  ctermbg=none ctermfg=none   guibg=bg       guifg=fg      gui=none
 highlight DiffChange     cterm=none  ctermbg=225  ctermfg=none   guibg=#FFFAFA  guifg=#000000 gui=none
 highlight DiffText       cterm=none  ctermbg=225  ctermfg=9      guibg=#FFFAFA  guifg=#ff0000 gui=none
-" endif
+endif
 
 if &background=='dark' 
 highlight DiffAdd        cterm=none  ctermbg=237  ctermfg=9      guibg=#3a3a3a  guifg=#ff0000 gui=none
