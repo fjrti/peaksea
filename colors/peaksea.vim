@@ -633,4 +633,3 @@ highlight GitDelete    cterm=none  ctermbg=none  ctermfg=9     guibg=bg  guifg=#
 
 " vim:et:nosta:sw=2:ts=8:
 " vim600:fdm=marker:fdl=1:
-
