@@ -240,3 +240,18 @@ highlight GitAdd         guibg=bg  guifg=#008000 gui=none
 highlight GitChange      guibg=bg  guifg=#87af87 gui=none
 highlight GitDelete      guibg=bg  guifg=#87af87 gui=none
 
+let g:Lf_StlPalette = {
+            \'stlName':         { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'bold', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlCategory':     { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlNameOnlyMode': { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlFullPathMode': { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlFuzzyMode':    { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlRegexMode':    { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlCwd':          { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlBlank':        { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlLineInfo':     { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
+            \'stlTotal':        { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' }
+            \}
+
+
+
