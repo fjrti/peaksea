@@ -17,7 +17,7 @@ set termguicolors
 
 if &background=='light' 
     hi Normal		guifg=#000000	guibg=#e0e0e0	gui=NONE
-    hi Search		guifg=NONE	    guibg=#f8f8f8	gui=NONE
+    " hi Search		guifg=NONE	    guibg=#f8f8f8	gui=NONE
     hi Visual		guifg=NONE	    guibg=#a6caf0	gui=NONE
     hi Cursor		guifg=#f0f0f0	guibg=#008000	gui=NONE
     hi CursorIM		guifg=#f0f0f0	guibg=#800080   gui=NONE
@@ -34,18 +34,18 @@ if &background=='light'
     hi Todo		    guifg=#800000	guibg=#e0e090	gui=NONE
     hi Error		guifg=#c03000	guibg=NONE	gui=NONE
     hi Identifier	guifg=#a030a0	guibg=NONE	gui=NONE
-    hi ModeMsg		guifg=fg	guibg=#b0b0e0	gui=NONE
-    hi VisualNOS	guifg=fg	guibg=#b0b0e0	gui=NONE
+    hi ModeMsg		guifg=fg	    guibg=#b0b0e0	gui=NONE
+    hi VisualNOS	guifg=fg	    guibg=#b0b0e0	gui=NONE
     hi SpecialKey	guifg=#1050a0	guibg=NONE	gui=NONE
     hi NonText		guifg=#002090	guibg=#d0d0d0	gui=NONE
-    hi Directory		guifg=#a030a0	guibg=NONE	gui=NONE
-    hi ErrorMsg		guifg=fg	guibg=#f0b090	gui=NONE
+    hi Directory	guifg=#a030a0	guibg=NONE	gui=NONE
+    hi ErrorMsg		guifg=fg    	guibg=#f0b090	gui=NONE
     hi MoreMsg		guifg=#489000	guibg=NONE	gui=NONE
     hi Title		guifg=#a030a0	guibg=NONE	gui=NONE
     hi WarningMsg	guifg=#b02000	guibg=NONE	gui=NONE
-    hi WildMenu		guifg=fg	guibg=#d0d090	gui=NONE
-    hi Folded		guifg=NONE	guibg=#b0e0b0	gui=NONE
-    hi FoldColumn	guifg=fg	guibg=#90e090	gui=NONE
+    hi WildMenu		guifg=fg    	guibg=#d0d090	gui=NONE
+    hi Folded		guifg=NONE	    guibg=#b0e0b0	gui=NONE
+    hi FoldColumn	guifg=fg	    guibg=#90e090	gui=NONE
     hi DiffAdd		guifg=NONE	guibg=#b0b0e0	gui=NONE
     hi DiffChange	guifg=NONE	guibg=#e0b0e0	gui=NONE
     hi DiffDelete	guifg=#002090	guibg=#d0d0d0	gui=NONE
@@ -53,7 +53,6 @@ if &background=='light'
     hi SignColumn	guifg=fg	guibg=#90e090	gui=NONE
     hi IncSearch	guifg=#f0f0f0	guibg=#806060	gui=NONE
     hi StatusLineNC	guifg=fg	guibg=#c0c0c0	gui=NONE
-    hi VertSplit	guifg=fg	guibg=#c0c0c0	gui=NONE
     hi Underlined	guifg=#6a5acd	guibg=NONE	gui=underline
     hi Ignore		guifg=bg	guibg=NONE
     hi SpellBad	    guifg=NONE	guibg=NONE	guisp=#c03000
@@ -71,48 +70,32 @@ if &background=='light'
     hi CursorLine	guifg=NONE	guibg=NONE	gui=underline
     hi MatchParen	guifg=NONE	guibg=#c0e080
     hi Ignore		gui=NONE
-    hi SpellBad	gui=undercurl
-    hi SpellCap	gui=undercurl
+    hi SpellBad	    gui=undercurl
+    hi SpellCap	    gui=undercurl
     hi SpellRare	gui=undercurl
     hi SpellLocal	gui=undercurl
     hi TabLine		gui=underline
     hi TabLineFill	gui=underline
     hi CursorLine	gui=underline
-    hi IncSearch		gui=bold
-    hi StatusLine		gui=bold
-    hi StatusLineNC	gui=bold
-    hi VertSplit		gui=bold
-    hi Visual		gui=bold
-    hi Question		gui=bold
-    hi DiffText		gui=bold
-    hi Statement		gui=bold
-    hi Type		gui=bold
-    hi MoreMsg		gui=bold
-    hi ModeMsg		gui=bold
-    hi NonText		gui=bold
-    hi Title		gui=bold
-    hi DiffDelete		gui=bold
-    hi TabLineSel		gui=bold
 
 elseif &background=='dark' 
 
     hi Normal		guifg=#d0d0d0	guibg=#202020	gui=NONE
-    hi Comment		guifg=#d0d090	guibg=NONE	gui=NONE
-    hi Constant		guifg=#80c0e0	guibg=NONE	gui=NONE
-    hi Number		guifg=#e0c060	guibg=NONE	gui=NONE
-    hi Identifier	guifg=#f0c0f0	guibg=NONE	gui=NONE
-    hi Statement	guifg=#c0d8f8	guibg=NONE	gui=NONE
+    hi Comment		guifg=#d0d090	guibg=NONE		gui=NONE
+    hi Constant		guifg=#80c0e0	guibg=NONE		gui=NONE
+    hi Number		guifg=#e0c060	guibg=NONE		gui=NONE
+    hi Identifier	guifg=#f0c0f0	guibg=NONE		gui=NONE
+    hi Statement	guifg=#c0d8f8	guibg=NONE		gui=NONE
     hi PreProc		guifg=#60f080	guibg=NONE	gui=NONE
     hi Type		    guifg=#b0d0f0	guibg=NONE	gui=NONE
     hi Special		guifg=#e0c060	guibg=NONE	gui=NONE
     hi Error		guifg=#f08060	guibg=NONE	gui=NONE
     hi Todo		    guifg=#800000	guibg=#d0d090	gui=NONE
-    hi Search		guifg=NONE	guibg=#800000	gui=NONE
+    " hi Search		guifg=NONE		guibg=#444444	gui=NONE
     hi Visual		guifg=#000000	guibg=#a6caf0	gui=NONE
     hi Cursor		guifg=#000000	guibg=#00f000	gui=NONE
-    " NOTE THIS IS IN THE COOL SECTION
     hi CursorIM		guifg=#000000	guibg=#f0c0f0	gui=NONE
-    hi StatusLine	guifg=#000000	guibg=#a6caf0	gui=NONE
+    hi StatusLine	guifg=#444444	guibg=#80c0e0	gui=NONE
     hi LineNr		guifg=#b0b0b0	guibg=NONE	gui=NONE
     hi Question		guifg=#000000	guibg=#d0d090	gui=NONE
     hi ModeMsg		guifg=fg	guibg=#000080	gui=NONE
@@ -134,7 +117,6 @@ elseif &background=='dark'
     hi SignColumn	guifg=#e0e0e0	guibg=#008000	gui=NONE
     hi IncSearch	guifg=#000000	guibg=#d0d0d0	gui=NONE
     hi StatusLineNC	guifg=#000000	guibg=#c0c0c0	gui=NONE
-    hi VertSplit	guifg=#000000	guibg=#c0c0c0	gui=NONE
     hi Underlined	guifg=#80a0ff	guibg=NONE	gui=underline 
     hi Ignore		guifg=#000000	guibg=NONE
     " the guisp= could only support in Vim 7
@@ -163,11 +145,8 @@ elseif &background=='dark'
     hi TabLineFill	gui=underline  
     hi Underlined	gui=underline  
     hi CursorLine	gui=underline 
-endif
 
-" Links:
-"
-" COLOR LINKS DEFINE START
+endif
 
 hi link		String		Constant
 " Character must be different from strings because in many languages
@@ -183,19 +162,14 @@ hi link		Warning		MoreMsg
 hi link		Notice		Constant
 " these are used by Calendar
 hi link		CalToday	PreProc
-" these are used by TagList
-hi link		MyTagListTagName	IncSearch
-hi link		MyTagListTagScope	Constant
 
-"
+hi! link	IncSearch	 Visual
+hi! link	Search		 Visual
+hi! link	CursorColumn Visual
+
 " from extend.vim
 "
-
 if &background=='light' 
-    " highlight DiffAdd        cterm=none  ctermbg=225  ctermfg=9      guibg=#FFFAFA guifg=#ff0000 gui=none
-    " highlight DiffDelete     cterm=none  ctermbg=none ctermfg=none   guibg=bg       guifg=fg      gui=none
-    " highlight DiffChange     cterm=none  ctermbg=225  ctermfg=none   guibg=#FFFAFA  guifg=#000000 gui=none
-    " highlight DiffText       cterm=none  ctermbg=225  ctermfg=9      guibg=#FFFAFA  guifg=#ff0000 gui=none
     highlight DiffAdd       guibg=#FFFAFA  guifg=#ff0000 gui=none
     highlight DiffDelete    guibg=bg       guifg=fg      gui=none
     highlight DiffChange    guibg=#FFFAFA  guifg=#000000 gui=none
@@ -208,10 +182,6 @@ if &background=='light'
 endif
 
 if &background=='dark' 
-    " highlight DiffAdd        cterm=none  ctermbg=237  ctermfg=9      guibg=#3a3a3a  guifg=#ff0000 gui=none
-    " highlight DiffDelete     cterm=none  ctermbg=none ctermfg=none   guibg=bg       guifg=fg      gui=none
-    " highlight DiffChange     cterm=none  ctermbg=237  ctermfg=none   guibg=#3a3a3a  guifg=#ffffff gui=none
-    " highlight DiffText       cterm=none  ctermbg=237  ctermfg=9      guibg=#3a3a3a  guifg=#ff0000 gui=none
     highlight DiffAdd        guibg=#3a3a3a  guifg=#ff0000 gui=none
     highlight DiffDelete     guibg=bg       guifg=fg      gui=none
     highlight DiffChange     guibg=#3a3a3a  guifg=#ffffff gui=none
@@ -225,9 +195,7 @@ endif
 highlight clear SignColumn
 highlight clear ErrorMsg
 
-highlight VertSplit      guibg=bg       guifg=#8a8a8a
-" highlight CursorLine     cterm=none  ctermbg=237   guibg=#3a3a3a  guifg=fg      gui=none
-" highlight CursorLine     cterm=underline ctermbg=none  ctermfg=none   guibg=#3a3a3a  guifg=fg      gui=none
+highlight VertSplit      guibg=fg       guifg=bg
 highlight NonText        guibg=bg       guifg=fg
 highlight PMenu          guifg=black    guibg=darkgrey
 highlight PMenuSel       guifg=darkgrey guibg=black
@@ -252,6 +220,4 @@ let g:Lf_StlPalette = {
             \'stlLineInfo':     { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' },
             \'stlTotal':        { 'gui': 'NONE', 'font': 'NONE', 'guifg': 'NONE', 'guibg': 'NONE', 'cterm': 'NONE', 'ctermfg': '0', 'ctermbg': '15' }
             \}
-
-
 
