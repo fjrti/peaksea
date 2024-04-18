@@ -1,3 +1,4 @@
+"
 " simple - base on default color scheme
 "
 
@@ -22,10 +23,20 @@ hi TabLineSel ctermfg=2
 hi clear TabLineFill
 hi clear TabLine
 
+let &t_SI = "\<esc>[5 q" . "\<Esc>]12;white\x7"
+let &t_SR = "\<esc>[5 q" . "\<Esc>]12;green\x7"
+let &t_EI = "\<esc>[2 q" . "\<Esc>]12;green\x7"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" patch to coc color scheme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 hi CocListLine ctermbg=237
 hi CocMenuSel  ctermbg=242 
 hi CocFloating ctermbg=237
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" patch to leaderf color scheme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 hi Lf_hl_cursorline ctermfg=2
 hi link Lf_hl_popup_File_matchMode  Visual
 hi link Lf_hl_popup_File_mode Visual
@@ -59,6 +70,3 @@ hi link Lf_hl_popup_spin Visual
 hi link Lf_hl_popup_total Visual
 hi link Lf_hl_previewTitle Visual
 
-let &t_SI = "\<esc>[5 q" . "\<Esc>]12;white\x7"
-let &t_SR = "\<esc>[5 q" . "\<Esc>]12;green\x7"
-let &t_EI = "\<esc>[2 q" . "\<Esc>]12;green\x7"
